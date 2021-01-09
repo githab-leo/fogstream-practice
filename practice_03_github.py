@@ -106,8 +106,14 @@ class GoodInfoList:
     cheapest_product()
     выводит список самых дешёвых товаров
 
-    def ending_products(self):
+    def ending_products():
     выводит список заканчивающихся товаров
+
+    get_std():
+    выводит среднее отклонение для всех цен товаров
+
+    remove_last():
+    удаляет последний товар
     """
 
     goods_list = None
@@ -246,6 +252,27 @@ class GoodInfoList:
                 quantity_goods = float(element.number_goods)
         return ending_products_list
 
+    def get_std(self):
+        """
+        Метод выводит среднее отклонение для всех цен товаров.
+        :return: значение отклонения 
+        :rtype: float
+        """
+        sum_cost = 0
+        diffs = 0
+        for element in self.goods_list:
+            sum_cost += element.cost_product
+        arithmetic_mean = sum_cost / len(self.goods_list)
+        for element in self.goods_list:
+            diffs += pow(element.cost_product - arithmetic_mean, 2)
+        return  pow(diffs / len(self.goods_list), 0.5)
+
+    def remove_last(self):
+        """
+        Метод удаляет последний товар.
+        """
+        self.goods_list.pop()
+    
     def __getitem__(self, key):
         # переопределяем вывода по индексу
         return self.goods_list[key]
@@ -257,6 +284,9 @@ class GoodInfoList:
             result_list.append(str(element))
         return '\n'.join(result_list)
 
+    def __len__(self):
+        return len(self.goods_list)
+
 # -----------------------------------------
 
 
@@ -264,7 +294,7 @@ goods_info_list = GoodInfoList()
 goods_info_list.read_file('goods')
 
 print("Общее количество товаров - {total_count}"
-      .format(total_count=len(goods_info_list.goods_list)))
+      .format(total_count=len(goods_info_list)))
 
 sum = 0
 for element in goods_info_list.goods_list:
@@ -281,3 +311,6 @@ for element in goods_info_list.ending_products():
     print("Заканчивается товар - {good_name}, Осталось - {good_cost}"
           .format(good_name=element.product_name,
                   good_cost=element.cost_product))
+
+
+
