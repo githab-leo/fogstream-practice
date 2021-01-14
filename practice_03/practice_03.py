@@ -82,11 +82,8 @@ class GoodInfoList:
     -------
     data_control()
     проверяет корректность вводимых данных
-	
-	del_expired_product()
-	удаляет товар с истёкшим сроком годности
-    
-	read_file(file_path)
+
+    read_file(file_path)
     считывает данные из файла file_path
 
     add(good_info):
@@ -120,7 +117,6 @@ class GoodInfoList:
 
 	average_price()
 	выводит среднюю цену товаров
-	
     """
 
     goods_list = None
@@ -265,11 +261,8 @@ class GoodInfoList:
         :return: значение отклонения 
         :rtype: float
         """
-        sum_cost = 0
         diffs = 0
-        for element in self.goods_list:
-            sum_cost += element.cost_product
-        arithmetic_mean = sum_cost / len(self.goods_list)
+        arithmetic_mean = self.average_price()
         for element in self.goods_list:
             diffs += pow(element.cost_product - arithmetic_mean, 2)
         return  pow(diffs / len(self.goods_list), 0.5)
@@ -277,8 +270,10 @@ class GoodInfoList:
     def remove_last(self):
         """
         Метод удаляет последний товар.
+        :return: последний товар
+        :rtype: list[GoodInfo(str, int, int)]
         """
-        self.goods_list.pop()
+        return self.goods_list.pop()
 		
     def average_price(self):
         """
@@ -326,6 +321,5 @@ for element in goods_info_list.ending_products():
     print("Заканчивается товар - {good_name}, Осталось - {good_cost}"
           .format(good_name=element.product_name,
                   good_cost=element.cost_product))
-
 
 
