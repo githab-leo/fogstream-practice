@@ -6,6 +6,17 @@
 # Добавьте в GoodInfo новое свойство/аттрибут - Дата поставки (день, месяц, год).
 # Обновите метод добавления товара. При добавлении в случае если ДАТА поставки
 # меньше текущей нужно выдавать сообщение об ошибке.
+"""
+уточнение от Ивана от 13.01.21
+И для правильного восприятия давайте заменим атрибут дата доставки на дату производства(дату доставки можно оставит, но сейчас она не потребуется)
+При добавлении товара он должен быть не просрочен, иначе выводиться сообщение.
+
+Моё видение ТЗ, согласованное с Иваном
+Добавьте в GoodInfo новое свойство/аттрибут - Дата производства (день, месяц, год).
+Добавьте в GoodInfo новое свойство/аттрибут - Срок годности.
+Реализовать внутренний метод, в котором при добавлении товара, будет проверятся не просрочен ли товар.
+Если просрочен, то выводится сообщение об этом. Товар при этом в список не добавляется.
+"""
 
 # Добавьте в GoodInfo новое свойство/аттрибут - Срок годности. Обновите
 # метод добавления товара. Добавьте внутренний метод - Проверить срок, который удаляет
@@ -19,6 +30,7 @@
 # Для проверки используйте файл, приложенный к заданию goods2.info
 # Данные в файле находятся в в формате:
 # Имя товара:Цена:Количество:Дата поставки:Время хранения(в днях)
+
 
 '''
 Модуль good_info содержит в себе классы для работы с информациеё о товарах.
@@ -40,27 +52,33 @@ class GoodInfo:
     product_name (str): название товара
     cost_product (int): цена товара
     number_goods (int): количество товара
-    delivery_date (datetime.date): дата поставки товара
+    production_date (datetime.date): дата производства товара 
     storage_time (int): время хранения(в днях)
     """
 
     product_name = 'product_name'
     number_goods = 'number_goods'
     cost_product = 'cost_product'
-    delivery_date = "delivery_date"
+    production_date = "production_date"
     storage_time = 'storage_time'
 
     def __init__(self, product_name, cost_product,
-                 number_goods, delivery_date, storage_time):
+                 number_goods, production_date, storage_time):
         self.product_name = product_name
         self.cost_product = cost_product
         self.number_goods = number_goods
-        self.delivery_date = delivery_date
+        self.production_date = production_date
         self.storage_time = storage_time
 
     def __str__(self):
         # переопределяем вывод         
-        return 'Название товара: {p_n}. Цена: {c_p}руб. Количество: {n_g}. Дата поставки: {d_d}. Время хранения: {s_t} дней.'.format(p_n=self.product_name, c_p=self.cost_product, n_g=self.number_goods, d_d=self.delivery_date, s_t=self.storage_time)
+        return 'Название товара: {p_n}. Цена: {c_p}руб. Количество: {n_g}.' \
+               ' Дата поставки: {d_d}. Время хранения: {s_t} дней.'\
+                .format(p_n=self.product_name,
+                        c_p=self.cost_product,
+                        n_g=self.number_goods,
+                        d_d=self.production_date,
+                        s_t=self.storage_time)
 
 
 class GoodInfoList:
@@ -78,9 +96,6 @@ class GoodInfoList:
     data_control()
     проверяет корректность вводимых данных
 
-    del_expired_product()
-    удаляет товар с истёкшим сроком годности
-	
     read_file(file_path)
     считывает данные из файла file_path
 
@@ -113,8 +128,8 @@ class GoodInfoList:
     remove_last():
     удаляет последний товар
 
-	average_price()
-	выводит среднюю цену товаров
+    average_price()
+    выводит среднюю цену товаров
     """
     
     goods_list = None
@@ -131,7 +146,7 @@ class GoodInfoList:
         :return: список корректных строк из файла
         :rtype: list
         """
-        from datetime import date
+        from datetime import date, timedelta
         line_ok = []
         # проверка данных
         for line in strings_list:
@@ -141,33 +156,17 @@ class GoodInfoList:
             elif len(line) < 9:
                 print('Отсутствуют данные в строке!')
             else:
+                # складываем дату производства и срок хранения
+                # если результат меньше сегодняшнего дня - товар просрочен
                 line_split = line.split(":")
-                delivery_date = date.fromisoformat(line_split[3])
-                if date.today() < delivery_date:
-                    print('Дата поставки больше текущей!')
+                production_date = date.fromisoformat(line_split[3])
+                storage_time = timedelta(days=int(line_split[4]))
+                if date.today() > production_date + storage_time:
+                    print('Удалён просроченный товар: ', line_split[0])
                 else:
                     # формируем список с проверенными записями
                     line_ok.append(line)
         return line_ok
-    
-    def del_expired_product(self):
-        """
-        Метод удаляет товар с истёкшим сроком годности
-        :return: список не просроченных товаров
-        :rtype: list
-        """
-        from datetime import date, timedelta
-        good_product = []
-        for element in self.goods_list:
-            # расчитываем окончание срока годности
-            expiration_date = element.delivery_date +\
-                              timedelta(days=element.storage_time)
-            #print(expiration_date)
-            if date.today() > expiration_date:
-                print('Истёк срок годности: {}'.format(element.product_name))
-            else:
-                good_product.append(element)
-        return good_product
 
     def read_file(self, file_path):
         """
@@ -185,12 +184,12 @@ class GoodInfoList:
             product_name = line_split[0]
             cost_product = int(line_split[1])
             number_goods = int(line_split[2])
-            delivery_date = date.fromisoformat(line_split[3])
+            production_date = date.fromisoformat(line_split[3])
             storage_time = int(line_split[4].replace("\n", ""))
             self.add(GoodInfo(product_name,
                               cost_product,
                               number_goods,
-                              delivery_date,
+                              production_date,
                               storage_time))
 
     def add(self, good_info):
@@ -327,6 +326,8 @@ class GoodInfoList:
         result_list = []
         if isinstance(key, int):
             return self.goods_list[key]
+        elif isinstance(key, float):
+            raise ValueError('В качестве ключа указано рациональное число.')
         else:
             # если в качестве ключа передаётся имя товара
             # то возвращается список товаров с этим именем
@@ -334,7 +335,7 @@ class GoodInfoList:
                 if key == element.product_name:
                     result_list.append(element)
             return result_list
-			
+
     def __str__(self):
         # переопределяем вывод
         result_list = []
@@ -345,7 +346,3 @@ class GoodInfoList:
 
     def __len__(self):
         return len(self.goods_list)
-
-
-
-
