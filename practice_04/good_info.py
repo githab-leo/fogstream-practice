@@ -31,6 +31,7 @@
 # Данные в файле находятся в в формате:
 # Имя товара:Цена:Количество:Дата поставки:Время хранения(в днях)
 
+from datetime import date, timedelta
 
 '''
 Модуль good_info содержит в себе классы для работы с информациеё о товарах.
@@ -54,6 +55,11 @@ class GoodInfo:
     number_goods (int): количество товара
     production_date (datetime.date): дата производства товара 
     storage_time (int): время хранения(в днях)
+
+    Methods
+    -------
+    is_correct()
+    проверяет корректность вводимых данных
     """
 
     product_name = 'product_name'
@@ -62,13 +68,39 @@ class GoodInfo:
     production_date = "production_date"
     storage_time = 'storage_time'
 
+    @property
+    def is_correct(self):
+        """
+        Метод проверяет корректность вводимых данных
+        :return: логическое значени
+        :rtype: bool
+        """
+        if int(self.cost_product) < 0 or int(self.number_goods) < 0 \
+                or int(self.storage_time) < 0:
+            print('Введено отрицательное число!')
+            return False
+        elif self.product_name == '':
+            print('Не введено название товара!')
+            return False
+        if date.today() > date.fromisoformat(self.production_date) + \
+                timedelta(days=int(self.storage_time)):
+            print('Удалён просроченный товар: ', self.product_name)
+            return False
+        else:
+            self.product_name = self.product_name
+            self.cost_product = int(self.cost_product)
+            self.number_goods = int(self.number_goods)
+            self.production_date = date.fromisoformat(self.production_date)
+            self.storage_time = int(self.storage_time)	            
+            return True
+
     def __init__(self, product_name, cost_product,
                  number_goods, production_date, storage_time):
         self.product_name = product_name
         self.cost_product = cost_product
         self.number_goods = number_goods
         self.production_date = production_date
-        self.storage_time = storage_time
+        self.storage_time = storage_time	
 
     def __str__(self):
         # переопределяем вывод         
@@ -146,7 +178,6 @@ class GoodInfoList:
         :return: список корректных строк из файла
         :rtype: list
         """
-        from datetime import date, timedelta
         line_ok = []
         # проверка данных
         for line in strings_list:
@@ -156,16 +187,8 @@ class GoodInfoList:
             elif len(line) < 9:
                 print('Отсутствуют данные в строке!')
             else:
-                # складываем дату производства и срок хранения
-                # если результат меньше сегодняшнего дня - товар просрочен
-                line_split = line.split(":")
-                production_date = date.fromisoformat(line_split[3])
-                storage_time = timedelta(days=int(line_split[4]))
-                if date.today() > production_date + storage_time:
-                    print('Удалён просроченный товар: ', line_split[0])
-                else:
-                    # формируем список с проверенными записями
-                    line_ok.append(line)
+                # формируем список с проверенными записями
+                line_ok.append(line)
         return line_ok
 
     def read_file(self, file_path):
@@ -174,7 +197,6 @@ class GoodInfoList:
         :param file_path: имя файла
         :type file_path: str
         """
-        from datetime import date
         file_goods_info_list = open(file_path, "r", encoding="utf-8")
         # получаем список в котором содержится строки из файла
         strings_list = file_goods_info_list.readlines()
@@ -182,10 +204,10 @@ class GoodInfoList:
         for line in GoodInfoList.data_control(strings_list):
             line_split = line.split(":")
             product_name = line_split[0]
-            cost_product = int(line_split[1])
-            number_goods = int(line_split[2])
-            production_date = date.fromisoformat(line_split[3])
-            storage_time = int(line_split[4].replace("\n", ""))
+            cost_product = line_split[1]
+            number_goods = line_split[2]
+            production_date = line_split[3]
+            storage_time = line_split[4].replace("\n", "")
             self.add(GoodInfo(product_name,
                               cost_product,
                               number_goods,
@@ -199,7 +221,9 @@ class GoodInfoList:
         :type good_info:
         (:goods_info_list: str, int, int, date): объект GoodInfo
         """
-        self.goods_list.append(good_info)
+        # если информация в GoodInfo корректна, то создаётся элемент списка
+        if good_info.is_correct:
+            self.goods_list.append(good_info)
 
     def del_good(self, name_good='сахар 1кг'):
         """
