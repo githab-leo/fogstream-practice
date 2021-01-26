@@ -21,3 +21,20 @@ v = '-1'
 
 if int(v) < 0:
     print('-1')
+
+a = '10'
+
+print(a.isdigit())
+
+
+a = '10'
+ 
+try:
+    a = int(a)
+except ValueError:
+    print("Введено не число")
+else:
+    print("Введено число")
+
+if isinstance(a, int):
+    print('int')

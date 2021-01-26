@@ -60,6 +60,11 @@ class GoodInfo:
     -------
     is_correct()
     проверяет корректность вводимых данных
+
+    Methods
+    -------
+    data_convert()
+    преобразует данные объекта    
     """
 
     product_name = 'product_name'
@@ -75,24 +80,33 @@ class GoodInfo:
         :return: логическое значени
         :rtype: bool
         """
-        if int(self.cost_product) < 0 or int(self.number_goods) < 0 \
-                or int(self.storage_time) < 0:
-            print('Введено отрицательное число!')
-            return False
-        elif self.product_name == '':
-            print('Не введено название товара!')
-            return False
-        if date.today() > date.fromisoformat(self.production_date) + \
+        try:
+            if int(self.cost_product) < 0 or int(self.number_goods) < 0 \
+                    or int(self.storage_time) < 0:
+                print('Введено отрицательное число!')
+                return False
+            elif self.product_name == '':
+                print('Не введено название товара!')
+                return False
+            if date.today() > date.fromisoformat(self.production_date) + \
                 timedelta(days=int(self.storage_time)):
-            print('Удалён просроченный товар: ', self.product_name)
+                print('Удалён просроченный товар: ', self.product_name)
+                return False
+            else:
+                return True
+        except ValueError:
+            print('Некорректный ввод данных!')
             return False
-        else:
-            self.product_name = self.product_name
-            self.cost_product = int(self.cost_product)
-            self.number_goods = int(self.number_goods)
-            self.production_date = date.fromisoformat(self.production_date)
-            self.storage_time = int(self.storage_time)	            
-            return True
+
+    def data_convert(self):
+        """
+        Метод преобразует данные объекта
+        """
+        self.product_name = self.product_name
+        self.cost_product = int(self.cost_product)
+        self.number_goods = int(self.number_goods)
+        self.production_date = date.fromisoformat(self.production_date)
+        self.storage_time = int(self.storage_time)	 
 
     def __init__(self, product_name, cost_product,
                  number_goods, production_date, storage_time):
@@ -223,6 +237,7 @@ class GoodInfoList:
         """
         # если информация в GoodInfo корректна, то создаётся элемент списка
         if good_info.is_correct:
+            good_info.data_convert()
             self.goods_list.append(good_info)
 
     def del_good(self, name_good='сахар 1кг'):
