@@ -1,58 +1,201 @@
-[2021-01-27 00:06:31] [reporter] [INFO] reporter.py <module> reporter > ---------------- Проблемы про считывании файла --------------
-[2021-01-27 00:06:31] [reporter.good_info.GoodInfoList] [ERROR] good_info.py data_control good_info > Пустая строка в файле!
-[2021-01-27 00:06:31] [reporter.good_info.GoodInfo] [ERROR] good_info.py is_correct good_info > Удалён просроченный товар: молоко Хорская Буренка
-[2021-01-27 00:06:31] [reporter.good_info.GoodInfo] [ERROR] good_info.py is_correct good_info > Удалён просроченный товар: молоко Фермерское
-[2021-01-27 00:06:31] [reporter.good_info.GoodInfo] [ERROR] good_info.py is_correct good_info > Удалён просроченный товар: молоко Простоквашино
-[2021-01-27 00:06:31] [reporter.good_info.GoodInfo] [ERROR] good_info.py is_correct good_info > Удалён просроченный товар: хлеб серый хлебозавод
-[2021-01-27 00:06:31] [reporter.good_info.GoodInfo] [ERROR] good_info.py is_correct good_info > Удалён просроченный товар: яйцо 1 кат.
-[2021-01-27 00:06:31] [reporter.good_info.GoodInfo] [ERROR] good_info.py is_correct good_info > Удалён просроченный товар: яйцо 2 кат.
-[2021-01-27 00:06:31] [reporter.good_info.GoodInfo] [ERROR] good_info.py is_correct good_info > Удалён просроченный товар: яйцо 3 кат.
-[2021-01-27 00:06:31] [reporter.good_info.GoodInfo] [ERROR] good_info.py is_correct good_info > Удалён просроченный товар: масло сливочное
-[2021-01-27 00:06:31] [reporter.good_info.GoodInfo] [ERROR] good_info.py is_correct good_info > Удалён просроченный товар: масло подсолнечное
-[2021-01-27 00:06:31] [reporter.good_info.GoodInfo] [ERROR] good_info.py is_correct good_info > Удалён просроченный товар: хлеб ржаной хлебозавод
-[2021-01-27 00:06:31] [reporter.good_info.GoodInfo] [ERROR] good_info.py is_correct good_info > Удалён просроченный товар: сушки 1кг.
-[2021-01-27 00:06:31] [reporter.good_info.GoodInfo] [ERROR] good_info.py is_correct good_info > Удалён просроченный товар: груши Новая зеландия 1кг
-[2021-01-27 00:06:31] [reporter.good_info.GoodInfo] [ERROR] good_info.py is_correct good_info > Удалён просроченный товар: пряники 1кг.
-[2021-01-27 00:06:31] [reporter.good_info.GoodInfo] [ERROR] good_info.py is_correct good_info > Удалён просроченный товар: булочки плюшки
-[2021-01-27 00:06:31] [reporter.good_info.GoodInfo] [ERROR] good_info.py is_correct good_info > Удалён просроченный товар: пирожки с брусникой
-[2021-01-27 00:06:31] [reporter.good_info.GoodInfo] [ERROR] good_info.py is_correct good_info > Удалён просроченный товар: пирожки с картошкой
-[2021-01-27 00:06:31] [reporter.good_info.GoodInfo] [ERROR] good_info.py is_correct good_info > Удалён просроченный товар: пирожки с вишней
-[2021-01-27 00:06:31] [reporter.good_info.GoodInfo] [ERROR] good_info.py is_correct good_info > Удалён просроченный товар: яблоки Новая Зеландия 1кг
-[2021-01-27 00:06:31] [reporter.good_info.GoodInfo] [ERROR] good_info.py is_correct good_info > Введено отрицательное число!
-[2021-01-27 00:06:31] [reporter] [INFO] reporter.py <module> reporter > ----------------- Вывод информации о товарах ---------------
-[2021-01-27 00:06:31] [reporter] [INFO] reporter.py <module> reporter > Общее количество товаров - 29
-[2021-01-27 00:06:31] [reporter] [INFO] reporter.py <module> reporter > Средняя цена товара - 126.37931034482759
-[2021-01-27 00:06:31] [reporter] [INFO] reporter.py <module> reporter > Самый дорогой товар - рыба мороженая, Кета 1кг, Цена - 400
-[2021-01-27 00:06:31] [reporter] [INFO] reporter.py <module> reporter > Заканчивается товар - рыба мороженая, Кета 1кг, Осталось - 400
-[2021-01-27 00:06:31] [reporter] [INFO] reporter.py <module> reporter > Заканчивается товар - рыба мороженая, Треска 1кг, Осталось - 300
-[2021-01-27 00:06:31] [reporter] [INFO] reporter.py <module> reporter > Заканчивается товар - рыба мороженая, Горбуша 1кг, Осталось - 300
-[2021-01-27 00:06:31] [reporter] [INFO] reporter.py <module> reporter > Заканчивается товар - рыба мороженая, Окунь 1кг, Осталось - 300
-[2021-01-27 00:09:27] [reporter] [INFO] [reporter.py] [<module>] > ---------------- Проблемы про считывании файла --------------
-[2021-01-27 00:09:27] [reporter.good_info.GoodInfoList] [ERROR] [good_info.py] [data_control] > Пустая строка в файле!
-[2021-01-27 00:09:27] [reporter.good_info.GoodInfo] [ERROR] [good_info.py] [is_correct] > Удалён просроченный товар: молоко Хорская Буренка
-[2021-01-27 00:09:27] [reporter.good_info.GoodInfo] [ERROR] [good_info.py] [is_correct] > Удалён просроченный товар: молоко Фермерское
-[2021-01-27 00:09:27] [reporter.good_info.GoodInfo] [ERROR] [good_info.py] [is_correct] > Удалён просроченный товар: молоко Простоквашино
-[2021-01-27 00:09:27] [reporter.good_info.GoodInfo] [ERROR] [good_info.py] [is_correct] > Удалён просроченный товар: хлеб серый хлебозавод
-[2021-01-27 00:09:27] [reporter.good_info.GoodInfo] [ERROR] [good_info.py] [is_correct] > Удалён просроченный товар: яйцо 1 кат.
-[2021-01-27 00:09:27] [reporter.good_info.GoodInfo] [ERROR] [good_info.py] [is_correct] > Удалён просроченный товар: яйцо 2 кат.
-[2021-01-27 00:09:27] [reporter.good_info.GoodInfo] [ERROR] [good_info.py] [is_correct] > Удалён просроченный товар: яйцо 3 кат.
-[2021-01-27 00:09:27] [reporter.good_info.GoodInfo] [ERROR] [good_info.py] [is_correct] > Удалён просроченный товар: масло сливочное
-[2021-01-27 00:09:27] [reporter.good_info.GoodInfo] [ERROR] [good_info.py] [is_correct] > Удалён просроченный товар: масло подсолнечное
-[2021-01-27 00:09:27] [reporter.good_info.GoodInfo] [ERROR] [good_info.py] [is_correct] > Удалён просроченный товар: хлеб ржаной хлебозавод
-[2021-01-27 00:09:27] [reporter.good_info.GoodInfo] [ERROR] [good_info.py] [is_correct] > Удалён просроченный товар: сушки 1кг.
-[2021-01-27 00:09:27] [reporter.good_info.GoodInfo] [ERROR] [good_info.py] [is_correct] > Удалён просроченный товар: груши Новая зеландия 1кг
-[2021-01-27 00:09:27] [reporter.good_info.GoodInfo] [ERROR] [good_info.py] [is_correct] > Удалён просроченный товар: пряники 1кг.
-[2021-01-27 00:09:27] [reporter.good_info.GoodInfo] [ERROR] [good_info.py] [is_correct] > Удалён просроченный товар: булочки плюшки
-[2021-01-27 00:09:27] [reporter.good_info.GoodInfo] [ERROR] [good_info.py] [is_correct] > Удалён просроченный товар: пирожки с брусникой
-[2021-01-27 00:09:27] [reporter.good_info.GoodInfo] [ERROR] [good_info.py] [is_correct] > Удалён просроченный товар: пирожки с картошкой
-[2021-01-27 00:09:27] [reporter.good_info.GoodInfo] [ERROR] [good_info.py] [is_correct] > Удалён просроченный товар: пирожки с вишней
-[2021-01-27 00:09:27] [reporter.good_info.GoodInfo] [ERROR] [good_info.py] [is_correct] > Удалён просроченный товар: яблоки Новая Зеландия 1кг
-[2021-01-27 00:09:27] [reporter.good_info.GoodInfo] [ERROR] [good_info.py] [is_correct] > Введено отрицательное число!
-[2021-01-27 00:09:27] [reporter] [INFO] [reporter.py] [<module>] > ----------------- Вывод информации о товарах ---------------
-[2021-01-27 00:09:27] [reporter] [INFO] [reporter.py] [<module>] > Общее количество товаров - 29
-[2021-01-27 00:09:27] [reporter] [INFO] [reporter.py] [<module>] > Средняя цена товара - 126.37931034482759
-[2021-01-27 00:09:27] [reporter] [INFO] [reporter.py] [<module>] > Самый дорогой товар - рыба мороженая, Кета 1кг, Цена - 400
-[2021-01-27 00:09:27] [reporter] [INFO] [reporter.py] [<module>] > Заканчивается товар - рыба мороженая, Кета 1кг, Осталось - 400
-[2021-01-27 00:09:27] [reporter] [INFO] [reporter.py] [<module>] > Заканчивается товар - рыба мороженая, Треска 1кг, Осталось - 300
-[2021-01-27 00:09:27] [reporter] [INFO] [reporter.py] [<module>] > Заканчивается товар - рыба мороженая, Горбуша 1кг, Осталось - 300
-[2021-01-27 00:09:27] [reporter] [INFO] [reporter.py] [<module>] > Заканчивается товар - рыба мороженая, Окунь 1кг, Осталось - 300
+[2021-02-01 00:56:07] [reporter] [INFO] [reporter.py] [main] > ---------------- Проблемы при считывании файла --------------
+[2021-02-01 00:56:07] [reporter.good_info.GoodInfoList] [ERROR] [good_info.py] [data_control] > Пустая строка в файле!
+[2021-02-01 00:56:07] [reporter.good_info.GoodInfo] [ERROR] [good_info.py] [is_correct] > Удалён просроченный товар: молоко Хорская Буренка
+[2021-02-01 00:56:07] [reporter.good_info.GoodInfo] [ERROR] [good_info.py] [is_correct] > Удалён просроченный товар: молоко Фермерское
+[2021-02-01 00:56:07] [reporter.good_info.GoodInfo] [ERROR] [good_info.py] [is_correct] > Удалён просроченный товар: молоко Простоквашино
+[2021-02-01 00:56:07] [reporter.good_info.GoodInfo] [ERROR] [good_info.py] [is_correct] > Удалён просроченный товар: хлеб серый хлебозавод
+[2021-02-01 00:56:07] [reporter.good_info.GoodInfo] [ERROR] [good_info.py] [is_correct] > Удалён просроченный товар: яйцо 1 кат.
+[2021-02-01 00:56:07] [reporter.good_info.GoodInfo] [ERROR] [good_info.py] [is_correct] > Удалён просроченный товар: яйцо 2 кат.
+[2021-02-01 00:56:07] [reporter.good_info.GoodInfo] [ERROR] [good_info.py] [is_correct] > Удалён просроченный товар: яйцо 3 кат.
+[2021-02-01 00:56:07] [reporter.good_info.GoodInfo] [ERROR] [good_info.py] [is_correct] > Удалён просроченный товар: масло сливочное
+[2021-02-01 00:56:07] [reporter.good_info.GoodInfo] [ERROR] [good_info.py] [is_correct] > Удалён просроченный товар: масло подсолнечное
+[2021-02-01 00:56:07] [reporter.good_info.GoodInfo] [ERROR] [good_info.py] [is_correct] > Удалён просроченный товар: хлеб ржаной хлебозавод
+[2021-02-01 00:56:07] [reporter.good_info.GoodInfo] [ERROR] [good_info.py] [is_correct] > Удалён просроченный товар: сушки 1кг.
+[2021-02-01 00:56:07] [reporter.good_info.GoodInfo] [ERROR] [good_info.py] [is_correct] > Удалён просроченный товар: груши Новая зеландия 1кг
+[2021-02-01 00:56:07] [reporter.good_info.GoodInfo] [ERROR] [good_info.py] [is_correct] > Удалён просроченный товар: пряники 1кг.
+[2021-02-01 00:56:07] [reporter.good_info.GoodInfo] [ERROR] [good_info.py] [is_correct] > Удалён просроченный товар: булочки плюшки
+[2021-02-01 00:56:07] [reporter.good_info.GoodInfo] [ERROR] [good_info.py] [is_correct] > Удалён просроченный товар: пирожки с брусникой
+[2021-02-01 00:56:07] [reporter.good_info.GoodInfo] [ERROR] [good_info.py] [is_correct] > Удалён просроченный товар: пирожки с картошкой
+[2021-02-01 00:56:07] [reporter.good_info.GoodInfo] [ERROR] [good_info.py] [is_correct] > Удалён просроченный товар: пирожки с вишней
+[2021-02-01 00:56:07] [reporter.good_info.GoodInfo] [ERROR] [good_info.py] [is_correct] > Удалён просроченный товар: картофель 1кг
+[2021-02-01 00:56:07] [reporter.good_info.GoodInfo] [ERROR] [good_info.py] [is_correct] > Удалён просроченный товар: лук репчатый 1кг
+[2021-02-01 00:56:07] [reporter.good_info.GoodInfo] [ERROR] [good_info.py] [is_correct] > Удалён просроченный товар: морковь 1кг
+[2021-02-01 00:56:07] [reporter.good_info.GoodInfo] [ERROR] [good_info.py] [is_correct] > Удалён просроченный товар: яблоки Новая Зеландия 1кг
+[2021-02-01 00:56:07] [reporter.good_info.GoodInfo] [ERROR] [good_info.py] [is_correct] > Введено отрицательное число!
+[2021-02-01 00:56:07] [reporter] [INFO] [reporter.py] [main] > ----------------- Вывод информации о товарах ---------------
+[2021-02-01 00:56:07] [reporter] [INFO] [reporter.py] [main] > Общее количество товаров - 26
+[2021-02-01 00:56:07] [reporter] [INFO] [reporter.py] [main] > Средняя цена товара - 135.0
+[2021-02-01 00:56:07] [reporter] [INFO] [reporter.py] [main] > Самый дорогой товар - рыба мороженая, Кета 1кг, Цена - 400
+[2021-02-01 00:56:07] [reporter] [INFO] [reporter.py] [main] > Заканчивается товар - рыба мороженая, Кета 1кг, Осталось - 400
+[2021-02-01 00:56:07] [reporter] [INFO] [reporter.py] [main] > Заканчивается товар - рыба мороженая, Треска 1кг, Осталось - 300
+[2021-02-01 00:56:07] [reporter] [INFO] [reporter.py] [main] > Заканчивается товар - рыба мороженая, Горбуша 1кг, Осталось - 300
+[2021-02-01 00:56:07] [reporter] [INFO] [reporter.py] [main] > Заканчивается товар - рыба мороженая, Окунь 1кг, Осталось - 300
+[2021-02-01 00:56:07] [reporter] [INFO] [reporter.py] [main] > ---------------- Проблемы при записи файла --------------
+[2021-02-01 00:57:23] [reporter] [INFO] [reporter.py] [main] > ---------------- Проблемы при считывании файла --------------
+[2021-02-01 00:57:23] [reporter.good_info.GoodInfoList] [ERROR] [good_info.py] [data_control] > Пустая строка в файле!
+[2021-02-01 00:57:23] [reporter.good_info.GoodInfo] [ERROR] [good_info.py] [is_correct] > Удалён просроченный товар: молоко Хорская Буренка
+[2021-02-01 00:57:23] [reporter.good_info.GoodInfo] [ERROR] [good_info.py] [is_correct] > Удалён просроченный товар: молоко Фермерское
+[2021-02-01 00:57:23] [reporter.good_info.GoodInfo] [ERROR] [good_info.py] [is_correct] > Удалён просроченный товар: молоко Простоквашино
+[2021-02-01 00:57:23] [reporter.good_info.GoodInfo] [ERROR] [good_info.py] [is_correct] > Удалён просроченный товар: хлеб серый хлебозавод
+[2021-02-01 00:57:23] [reporter.good_info.GoodInfo] [ERROR] [good_info.py] [is_correct] > Удалён просроченный товар: яйцо 1 кат.
+[2021-02-01 00:57:23] [reporter.good_info.GoodInfo] [ERROR] [good_info.py] [is_correct] > Удалён просроченный товар: яйцо 2 кат.
+[2021-02-01 00:57:23] [reporter.good_info.GoodInfo] [ERROR] [good_info.py] [is_correct] > Удалён просроченный товар: яйцо 3 кат.
+[2021-02-01 00:57:23] [reporter.good_info.GoodInfo] [ERROR] [good_info.py] [is_correct] > Удалён просроченный товар: масло сливочное
+[2021-02-01 00:57:23] [reporter.good_info.GoodInfo] [ERROR] [good_info.py] [is_correct] > Удалён просроченный товар: масло подсолнечное
+[2021-02-01 00:57:23] [reporter.good_info.GoodInfo] [ERROR] [good_info.py] [is_correct] > Удалён просроченный товар: хлеб ржаной хлебозавод
+[2021-02-01 00:57:23] [reporter.good_info.GoodInfo] [ERROR] [good_info.py] [is_correct] > Удалён просроченный товар: сушки 1кг.
+[2021-02-01 00:57:23] [reporter.good_info.GoodInfo] [ERROR] [good_info.py] [is_correct] > Удалён просроченный товар: груши Новая зеландия 1кг
+[2021-02-01 00:57:23] [reporter.good_info.GoodInfo] [ERROR] [good_info.py] [is_correct] > Удалён просроченный товар: пряники 1кг.
+[2021-02-01 00:57:23] [reporter.good_info.GoodInfo] [ERROR] [good_info.py] [is_correct] > Удалён просроченный товар: булочки плюшки
+[2021-02-01 00:57:23] [reporter.good_info.GoodInfo] [ERROR] [good_info.py] [is_correct] > Удалён просроченный товар: пирожки с брусникой
+[2021-02-01 00:57:23] [reporter.good_info.GoodInfo] [ERROR] [good_info.py] [is_correct] > Удалён просроченный товар: пирожки с картошкой
+[2021-02-01 00:57:23] [reporter.good_info.GoodInfo] [ERROR] [good_info.py] [is_correct] > Удалён просроченный товар: пирожки с вишней
+[2021-02-01 00:57:23] [reporter.good_info.GoodInfo] [ERROR] [good_info.py] [is_correct] > Удалён просроченный товар: картофель 1кг
+[2021-02-01 00:57:23] [reporter.good_info.GoodInfo] [ERROR] [good_info.py] [is_correct] > Удалён просроченный товар: лук репчатый 1кг
+[2021-02-01 00:57:23] [reporter.good_info.GoodInfo] [ERROR] [good_info.py] [is_correct] > Удалён просроченный товар: морковь 1кг
+[2021-02-01 00:57:23] [reporter.good_info.GoodInfo] [ERROR] [good_info.py] [is_correct] > Удалён просроченный товар: яблоки Новая Зеландия 1кг
+[2021-02-01 00:57:23] [reporter.good_info.GoodInfo] [ERROR] [good_info.py] [is_correct] > Введено отрицательное число!
+[2021-02-01 00:57:23] [reporter] [INFO] [reporter.py] [main] > ----------------- Вывод информации о товарах ---------------
+[2021-02-01 00:57:23] [reporter] [INFO] [reporter.py] [main] > Общее количество товаров - 26
+[2021-02-01 00:57:23] [reporter] [INFO] [reporter.py] [main] > Средняя цена товара - 135.0
+[2021-02-01 00:57:23] [reporter] [INFO] [reporter.py] [main] > Самый дорогой товар - рыба мороженая, Кета 1кг, Цена - 400
+[2021-02-01 00:57:23] [reporter] [INFO] [reporter.py] [main] > Заканчивается товар - рыба мороженая, Кета 1кг, Осталось - 400
+[2021-02-01 00:57:23] [reporter] [INFO] [reporter.py] [main] > Заканчивается товар - рыба мороженая, Треска 1кг, Осталось - 300
+[2021-02-01 00:57:23] [reporter] [INFO] [reporter.py] [main] > Заканчивается товар - рыба мороженая, Горбуша 1кг, Осталось - 300
+[2021-02-01 00:57:23] [reporter] [INFO] [reporter.py] [main] > Заканчивается товар - рыба мороженая, Окунь 1кг, Осталось - 300
+[2021-02-01 00:57:23] [reporter] [INFO] [reporter.py] [main] > ---------------- Проблемы при записи файла --------------
+[2021-02-01 00:57:52] [reporter] [INFO] [reporter.py] [main] > ---------------- Проблемы при считывании файла --------------
+[2021-02-01 00:57:52] [reporter.good_info.GoodInfoList] [ERROR] [good_info.py] [data_control] > Пустая строка в файле!
+[2021-02-01 00:57:52] [reporter.good_info.GoodInfo] [ERROR] [good_info.py] [is_correct] > Удалён просроченный товар: молоко Хорская Буренка
+[2021-02-01 00:57:52] [reporter.good_info.GoodInfo] [ERROR] [good_info.py] [is_correct] > Удалён просроченный товар: молоко Фермерское
+[2021-02-01 00:57:52] [reporter.good_info.GoodInfo] [ERROR] [good_info.py] [is_correct] > Удалён просроченный товар: молоко Простоквашино
+[2021-02-01 00:57:52] [reporter.good_info.GoodInfo] [ERROR] [good_info.py] [is_correct] > Удалён просроченный товар: хлеб серый хлебозавод
+[2021-02-01 00:57:52] [reporter.good_info.GoodInfo] [ERROR] [good_info.py] [is_correct] > Удалён просроченный товар: яйцо 1 кат.
+[2021-02-01 00:57:52] [reporter.good_info.GoodInfo] [ERROR] [good_info.py] [is_correct] > Удалён просроченный товар: яйцо 2 кат.
+[2021-02-01 00:57:52] [reporter.good_info.GoodInfo] [ERROR] [good_info.py] [is_correct] > Удалён просроченный товар: яйцо 3 кат.
+[2021-02-01 00:57:52] [reporter.good_info.GoodInfo] [ERROR] [good_info.py] [is_correct] > Удалён просроченный товар: масло сливочное
+[2021-02-01 00:57:52] [reporter.good_info.GoodInfo] [ERROR] [good_info.py] [is_correct] > Удалён просроченный товар: масло подсолнечное
+[2021-02-01 00:57:52] [reporter.good_info.GoodInfo] [ERROR] [good_info.py] [is_correct] > Удалён просроченный товар: хлеб ржаной хлебозавод
+[2021-02-01 00:57:52] [reporter.good_info.GoodInfo] [ERROR] [good_info.py] [is_correct] > Удалён просроченный товар: сушки 1кг.
+[2021-02-01 00:57:52] [reporter.good_info.GoodInfo] [ERROR] [good_info.py] [is_correct] > Удалён просроченный товар: груши Новая зеландия 1кг
+[2021-02-01 00:57:52] [reporter.good_info.GoodInfo] [ERROR] [good_info.py] [is_correct] > Удалён просроченный товар: пряники 1кг.
+[2021-02-01 00:57:52] [reporter.good_info.GoodInfo] [ERROR] [good_info.py] [is_correct] > Удалён просроченный товар: булочки плюшки
+[2021-02-01 00:57:52] [reporter.good_info.GoodInfo] [ERROR] [good_info.py] [is_correct] > Удалён просроченный товар: пирожки с брусникой
+[2021-02-01 00:57:52] [reporter.good_info.GoodInfo] [ERROR] [good_info.py] [is_correct] > Удалён просроченный товар: пирожки с картошкой
+[2021-02-01 00:57:52] [reporter.good_info.GoodInfo] [ERROR] [good_info.py] [is_correct] > Удалён просроченный товар: пирожки с вишней
+[2021-02-01 00:57:52] [reporter.good_info.GoodInfo] [ERROR] [good_info.py] [is_correct] > Удалён просроченный товар: картофель 1кг
+[2021-02-01 00:57:52] [reporter.good_info.GoodInfo] [ERROR] [good_info.py] [is_correct] > Удалён просроченный товар: лук репчатый 1кг
+[2021-02-01 00:57:52] [reporter.good_info.GoodInfo] [ERROR] [good_info.py] [is_correct] > Удалён просроченный товар: морковь 1кг
+[2021-02-01 00:57:52] [reporter.good_info.GoodInfo] [ERROR] [good_info.py] [is_correct] > Удалён просроченный товар: яблоки Новая Зеландия 1кг
+[2021-02-01 00:57:52] [reporter.good_info.GoodInfo] [ERROR] [good_info.py] [is_correct] > Введено отрицательное число!
+[2021-02-01 00:57:52] [reporter] [INFO] [reporter.py] [main] > ----------------- Вывод информации о товарах ---------------
+[2021-02-01 00:57:52] [reporter] [INFO] [reporter.py] [main] > Общее количество товаров - 26
+[2021-02-01 00:57:52] [reporter] [INFO] [reporter.py] [main] > Средняя цена товара - 135.0
+[2021-02-01 00:57:52] [reporter] [INFO] [reporter.py] [main] > Самый дорогой товар - рыба мороженая, Кета 1кг, Цена - 400
+[2021-02-01 00:57:52] [reporter] [INFO] [reporter.py] [main] > Заканчивается товар - рыба мороженая, Кета 1кг, Осталось - 400
+[2021-02-01 00:57:52] [reporter] [INFO] [reporter.py] [main] > Заканчивается товар - рыба мороженая, Треска 1кг, Осталось - 300
+[2021-02-01 00:57:52] [reporter] [INFO] [reporter.py] [main] > Заканчивается товар - рыба мороженая, Горбуша 1кг, Осталось - 300
+[2021-02-01 00:57:52] [reporter] [INFO] [reporter.py] [main] > Заканчивается товар - рыба мороженая, Окунь 1кг, Осталось - 300
+[2021-02-01 00:57:52] [reporter] [INFO] [reporter.py] [main] > ---------------- Проблемы при записи файла --------------
+[2021-02-01 00:58:44] [reporter] [INFO] [reporter.py] [main] > ---------------- Проблемы при считывании файла --------------
+[2021-02-01 00:58:44] [reporter.good_info.GoodInfoList] [ERROR] [good_info.py] [data_control] > Пустая строка в файле!
+[2021-02-01 00:58:44] [reporter.good_info.GoodInfo] [ERROR] [good_info.py] [is_correct] > Удалён просроченный товар: молоко Хорская Буренка
+[2021-02-01 00:58:44] [reporter.good_info.GoodInfo] [ERROR] [good_info.py] [is_correct] > Удалён просроченный товар: молоко Фермерское
+[2021-02-01 00:58:44] [reporter.good_info.GoodInfo] [ERROR] [good_info.py] [is_correct] > Удалён просроченный товар: молоко Простоквашино
+[2021-02-01 00:58:44] [reporter.good_info.GoodInfo] [ERROR] [good_info.py] [is_correct] > Удалён просроченный товар: хлеб серый хлебозавод
+[2021-02-01 00:58:44] [reporter.good_info.GoodInfo] [ERROR] [good_info.py] [is_correct] > Удалён просроченный товар: яйцо 1 кат.
+[2021-02-01 00:58:44] [reporter.good_info.GoodInfo] [ERROR] [good_info.py] [is_correct] > Удалён просроченный товар: яйцо 2 кат.
+[2021-02-01 00:58:44] [reporter.good_info.GoodInfo] [ERROR] [good_info.py] [is_correct] > Удалён просроченный товар: яйцо 3 кат.
+[2021-02-01 00:58:44] [reporter.good_info.GoodInfo] [ERROR] [good_info.py] [is_correct] > Удалён просроченный товар: масло сливочное
+[2021-02-01 00:58:44] [reporter.good_info.GoodInfo] [ERROR] [good_info.py] [is_correct] > Удалён просроченный товар: масло подсолнечное
+[2021-02-01 00:58:44] [reporter.good_info.GoodInfo] [ERROR] [good_info.py] [is_correct] > Удалён просроченный товар: хлеб ржаной хлебозавод
+[2021-02-01 00:58:44] [reporter.good_info.GoodInfo] [ERROR] [good_info.py] [is_correct] > Удалён просроченный товар: сушки 1кг.
+[2021-02-01 00:58:44] [reporter.good_info.GoodInfo] [ERROR] [good_info.py] [is_correct] > Удалён просроченный товар: груши Новая зеландия 1кг
+[2021-02-01 00:58:44] [reporter.good_info.GoodInfo] [ERROR] [good_info.py] [is_correct] > Удалён просроченный товар: пряники 1кг.
+[2021-02-01 00:58:44] [reporter.good_info.GoodInfo] [ERROR] [good_info.py] [is_correct] > Удалён просроченный товар: булочки плюшки
+[2021-02-01 00:58:44] [reporter.good_info.GoodInfo] [ERROR] [good_info.py] [is_correct] > Удалён просроченный товар: пирожки с брусникой
+[2021-02-01 00:58:44] [reporter.good_info.GoodInfo] [ERROR] [good_info.py] [is_correct] > Удалён просроченный товар: пирожки с картошкой
+[2021-02-01 00:58:44] [reporter.good_info.GoodInfo] [ERROR] [good_info.py] [is_correct] > Удалён просроченный товар: пирожки с вишней
+[2021-02-01 00:58:44] [reporter.good_info.GoodInfo] [ERROR] [good_info.py] [is_correct] > Удалён просроченный товар: картофель 1кг
+[2021-02-01 00:58:44] [reporter.good_info.GoodInfo] [ERROR] [good_info.py] [is_correct] > Удалён просроченный товар: лук репчатый 1кг
+[2021-02-01 00:58:44] [reporter.good_info.GoodInfo] [ERROR] [good_info.py] [is_correct] > Удалён просроченный товар: морковь 1кг
+[2021-02-01 00:58:44] [reporter.good_info.GoodInfo] [ERROR] [good_info.py] [is_correct] > Удалён просроченный товар: яблоки Новая Зеландия 1кг
+[2021-02-01 00:58:44] [reporter.good_info.GoodInfo] [ERROR] [good_info.py] [is_correct] > Введено отрицательное число!
+[2021-02-01 00:58:44] [reporter] [INFO] [reporter.py] [main] > ----------------- Вывод информации о товарах ---------------
+[2021-02-01 00:58:44] [reporter] [INFO] [reporter.py] [main] > Общее количество товаров - 26
+[2021-02-01 00:58:44] [reporter] [INFO] [reporter.py] [main] > Средняя цена товара - 135.0
+[2021-02-01 00:58:44] [reporter] [INFO] [reporter.py] [main] > Самый дорогой товар - рыба мороженая, Кета 1кг, Цена - 400
+[2021-02-01 00:58:44] [reporter] [INFO] [reporter.py] [main] > Заканчивается товар - рыба мороженая, Кета 1кг, Осталось - 400
+[2021-02-01 00:58:44] [reporter] [INFO] [reporter.py] [main] > Заканчивается товар - рыба мороженая, Треска 1кг, Осталось - 300
+[2021-02-01 00:58:44] [reporter] [INFO] [reporter.py] [main] > Заканчивается товар - рыба мороженая, Горбуша 1кг, Осталось - 300
+[2021-02-01 00:58:44] [reporter] [INFO] [reporter.py] [main] > Заканчивается товар - рыба мороженая, Окунь 1кг, Осталось - 300
+[2021-02-01 00:58:44] [reporter] [INFO] [reporter.py] [main] > ---------------- Проблемы при записи файла --------------
+[2021-02-01 01:00:06] [reporter] [INFO] [reporter.py] [main] > ---------------- Проблемы при считывании файла --------------
+[2021-02-01 01:00:06] [reporter.good_info.GoodInfoList] [ERROR] [good_info.py] [data_control] > Пустая строка в файле!
+[2021-02-01 01:00:06] [reporter.good_info.GoodInfo] [ERROR] [good_info.py] [is_correct] > Удалён просроченный товар: молоко Хорская Буренка
+[2021-02-01 01:00:06] [reporter.good_info.GoodInfo] [ERROR] [good_info.py] [is_correct] > Удалён просроченный товар: молоко Фермерское
+[2021-02-01 01:00:06] [reporter.good_info.GoodInfo] [ERROR] [good_info.py] [is_correct] > Удалён просроченный товар: молоко Простоквашино
+[2021-02-01 01:00:06] [reporter.good_info.GoodInfo] [ERROR] [good_info.py] [is_correct] > Удалён просроченный товар: хлеб серый хлебозавод
+[2021-02-01 01:00:06] [reporter.good_info.GoodInfo] [ERROR] [good_info.py] [is_correct] > Удалён просроченный товар: яйцо 1 кат.
+[2021-02-01 01:00:06] [reporter.good_info.GoodInfo] [ERROR] [good_info.py] [is_correct] > Удалён просроченный товар: яйцо 2 кат.
+[2021-02-01 01:00:06] [reporter.good_info.GoodInfo] [ERROR] [good_info.py] [is_correct] > Удалён просроченный товар: яйцо 3 кат.
+[2021-02-01 01:00:06] [reporter.good_info.GoodInfo] [ERROR] [good_info.py] [is_correct] > Удалён просроченный товар: масло сливочное
+[2021-02-01 01:00:06] [reporter.good_info.GoodInfo] [ERROR] [good_info.py] [is_correct] > Удалён просроченный товар: масло подсолнечное
+[2021-02-01 01:00:06] [reporter.good_info.GoodInfo] [ERROR] [good_info.py] [is_correct] > Удалён просроченный товар: хлеб ржаной хлебозавод
+[2021-02-01 01:00:06] [reporter.good_info.GoodInfo] [ERROR] [good_info.py] [is_correct] > Удалён просроченный товар: сушки 1кг.
+[2021-02-01 01:00:06] [reporter.good_info.GoodInfo] [ERROR] [good_info.py] [is_correct] > Удалён просроченный товар: груши Новая зеландия 1кг
+[2021-02-01 01:00:06] [reporter.good_info.GoodInfo] [ERROR] [good_info.py] [is_correct] > Удалён просроченный товар: пряники 1кг.
+[2021-02-01 01:00:06] [reporter.good_info.GoodInfo] [ERROR] [good_info.py] [is_correct] > Удалён просроченный товар: булочки плюшки
+[2021-02-01 01:00:06] [reporter.good_info.GoodInfo] [ERROR] [good_info.py] [is_correct] > Удалён просроченный товар: пирожки с брусникой
+[2021-02-01 01:00:06] [reporter.good_info.GoodInfo] [ERROR] [good_info.py] [is_correct] > Удалён просроченный товар: пирожки с картошкой
+[2021-02-01 01:00:06] [reporter.good_info.GoodInfo] [ERROR] [good_info.py] [is_correct] > Удалён просроченный товар: пирожки с вишней
+[2021-02-01 01:00:06] [reporter.good_info.GoodInfo] [ERROR] [good_info.py] [is_correct] > Удалён просроченный товар: картофель 1кг
+[2021-02-01 01:00:06] [reporter.good_info.GoodInfo] [ERROR] [good_info.py] [is_correct] > Удалён просроченный товар: лук репчатый 1кг
+[2021-02-01 01:00:06] [reporter.good_info.GoodInfo] [ERROR] [good_info.py] [is_correct] > Удалён просроченный товар: морковь 1кг
+[2021-02-01 01:00:06] [reporter.good_info.GoodInfo] [ERROR] [good_info.py] [is_correct] > Удалён просроченный товар: яблоки Новая Зеландия 1кг
+[2021-02-01 01:00:06] [reporter.good_info.GoodInfo] [ERROR] [good_info.py] [is_correct] > Введено отрицательное число!
+[2021-02-01 01:00:06] [reporter] [INFO] [reporter.py] [main] > ----------------- Вывод информации о товарах ---------------
+[2021-02-01 01:00:06] [reporter] [INFO] [reporter.py] [main] > Общее количество товаров - 26
+[2021-02-01 01:00:06] [reporter] [INFO] [reporter.py] [main] > Средняя цена товара - 135.0
+[2021-02-01 01:00:06] [reporter] [INFO] [reporter.py] [main] > Самый дорогой товар - рыба мороженая, Кета 1кг, Цена - 400
+[2021-02-01 01:00:06] [reporter] [INFO] [reporter.py] [main] > Заканчивается товар - рыба мороженая, Кета 1кг, Осталось - 400
+[2021-02-01 01:00:06] [reporter] [INFO] [reporter.py] [main] > Заканчивается товар - рыба мороженая, Треска 1кг, Осталось - 300
+[2021-02-01 01:00:06] [reporter] [INFO] [reporter.py] [main] > Заканчивается товар - рыба мороженая, Горбуша 1кг, Осталось - 300
+[2021-02-01 01:00:06] [reporter] [INFO] [reporter.py] [main] > Заканчивается товар - рыба мороженая, Окунь 1кг, Осталось - 300
+[2021-02-01 01:00:06] [reporter] [INFO] [reporter.py] [main] > ---------------- Проблемы при записи файла --------------
+[2021-02-01 01:01:32] [reporter] [INFO] [reporter.py] [main] > ---------------- Проблемы при считывании файла --------------
+[2021-02-01 01:01:32] [reporter.good_info.GoodInfoList] [ERROR] [good_info.py] [data_control] > Пустая строка в файле!
+[2021-02-01 01:01:32] [reporter.good_info.GoodInfo] [ERROR] [good_info.py] [is_correct] > Удалён просроченный товар: молоко Хорская Буренка
+[2021-02-01 01:01:32] [reporter.good_info.GoodInfo] [ERROR] [good_info.py] [is_correct] > Удалён просроченный товар: молоко Фермерское
+[2021-02-01 01:01:32] [reporter.good_info.GoodInfo] [ERROR] [good_info.py] [is_correct] > Удалён просроченный товар: молоко Простоквашино
+[2021-02-01 01:01:32] [reporter.good_info.GoodInfo] [ERROR] [good_info.py] [is_correct] > Удалён просроченный товар: хлеб серый хлебозавод
+[2021-02-01 01:01:32] [reporter.good_info.GoodInfo] [ERROR] [good_info.py] [is_correct] > Удалён просроченный товар: яйцо 1 кат.
+[2021-02-01 01:01:32] [reporter.good_info.GoodInfo] [ERROR] [good_info.py] [is_correct] > Удалён просроченный товар: яйцо 2 кат.
+[2021-02-01 01:01:32] [reporter.good_info.GoodInfo] [ERROR] [good_info.py] [is_correct] > Удалён просроченный товар: яйцо 3 кат.
+[2021-02-01 01:01:32] [reporter.good_info.GoodInfo] [ERROR] [good_info.py] [is_correct] > Удалён просроченный товар: масло сливочное
+[2021-02-01 01:01:32] [reporter.good_info.GoodInfo] [ERROR] [good_info.py] [is_correct] > Удалён просроченный товар: масло подсолнечное
+[2021-02-01 01:01:32] [reporter.good_info.GoodInfo] [ERROR] [good_info.py] [is_correct] > Удалён просроченный товар: хлеб ржаной хлебозавод
+[2021-02-01 01:01:32] [reporter.good_info.GoodInfo] [ERROR] [good_info.py] [is_correct] > Удалён просроченный товар: сушки 1кг.
+[2021-02-01 01:01:32] [reporter.good_info.GoodInfo] [ERROR] [good_info.py] [is_correct] > Удалён просроченный товар: груши Новая зеландия 1кг
+[2021-02-01 01:01:32] [reporter.good_info.GoodInfo] [ERROR] [good_info.py] [is_correct] > Удалён просроченный товар: пряники 1кг.
+[2021-02-01 01:01:32] [reporter.good_info.GoodInfo] [ERROR] [good_info.py] [is_correct] > Удалён просроченный товар: булочки плюшки
+[2021-02-01 01:01:32] [reporter.good_info.GoodInfo] [ERROR] [good_info.py] [is_correct] > Удалён просроченный товар: пирожки с брусникой
+[2021-02-01 01:01:32] [reporter.good_info.GoodInfo] [ERROR] [good_info.py] [is_correct] > Удалён просроченный товар: пирожки с картошкой
+[2021-02-01 01:01:32] [reporter.good_info.GoodInfo] [ERROR] [good_info.py] [is_correct] > Удалён просроченный товар: пирожки с вишней
+[2021-02-01 01:01:32] [reporter.good_info.GoodInfo] [ERROR] [good_info.py] [is_correct] > Удалён просроченный товар: картофель 1кг
+[2021-02-01 01:01:32] [reporter.good_info.GoodInfo] [ERROR] [good_info.py] [is_correct] > Удалён просроченный товар: лук репчатый 1кг
+[2021-02-01 01:01:32] [reporter.good_info.GoodInfo] [ERROR] [good_info.py] [is_correct] > Удалён просроченный товар: морковь 1кг
+[2021-02-01 01:01:32] [reporter.good_info.GoodInfo] [ERROR] [good_info.py] [is_correct] > Удалён просроченный товар: яблоки Новая Зеландия 1кг
+[2021-02-01 01:01:32] [reporter.good_info.GoodInfo] [ERROR] [good_info.py] [is_correct] > Введено отрицательное число!
+[2021-02-01 01:01:32] [reporter] [INFO] [reporter.py] [main] > ----------------- Вывод информации о товарах ---------------
+[2021-02-01 01:01:32] [reporter] [INFO] [reporter.py] [main] > Общее количество товаров - 26
+[2021-02-01 01:01:32] [reporter] [INFO] [reporter.py] [main] > Средняя цена товара - 135.0
+[2021-02-01 01:01:32] [reporter] [INFO] [reporter.py] [main] > Самый дорогой товар - рыба мороженая, Кета 1кг, Цена - 400
+[2021-02-01 01:01:32] [reporter] [INFO] [reporter.py] [main] > Заканчивается товар - рыба мороженая, Кета 1кг, Осталось - 400
+[2021-02-01 01:01:32] [reporter] [INFO] [reporter.py] [main] > Заканчивается товар - рыба мороженая, Треска 1кг, Осталось - 300
+[2021-02-01 01:01:32] [reporter] [INFO] [reporter.py] [main] > Заканчивается товар - рыба мороженая, Горбуша 1кг, Осталось - 300
+[2021-02-01 01:01:32] [reporter] [INFO] [reporter.py] [main] > Заканчивается товар - рыба мороженая, Окунь 1кг, Осталось - 300
+[2021-02-01 01:01:32] [reporter] [INFO] [reporter.py] [main] > ---------------- Проблемы при записи файла --------------
+[2021-02-01 01:01:32] [reporter.good_info.GoodInfoList] [ERROR] [good_info.py] [write_file] > OSError. Не верно указано имя/путь записываемого файла!
+[2021-02-01 01:02:16] [reporter] [INFO] [reporter.py] [main] > ---------------- Проблемы при считывании файла --------------
+[2021-02-01 01:02:16] [reporter.good_info.GoodInfoList] [ERROR] [good_info.py] [read_file] > OSError. Не верно указано имя/путь читаемого файла!

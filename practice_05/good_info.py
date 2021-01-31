@@ -33,7 +33,7 @@
 
 from datetime import date, timedelta
 import logging
-
+import os
 '''
 Модуль good_info содержит в себе классы для работы с информациеё о товарах.
 
@@ -76,6 +76,7 @@ class GoodInfo:
         :return: логическое значени
         :rtype: bool
         """
+        # создан логер для функции is_correct класса GoodInfo
         log_gi = logging.getLogger('reporter.good_info.GoodInfo')
         try:
             if int(self.cost_product) < 0 or int(self.number_goods) < 0 \
@@ -176,8 +177,11 @@ class GoodInfoList:
     remove_last():
     удаляет последний товар
 
-    average_price()
+    average_price():
     выводит среднюю цену товаров
+
+    write_file(file_path)
+    записывает данные в файл file_path
     """
     
     goods_list = None
@@ -194,6 +198,7 @@ class GoodInfoList:
         :return: список корректных строк из файла
         :rtype: list
         """
+        # создан логер для метода data_control класса GoodInfoList
         log_gil = logging.getLogger('reporter.good_info.GoodInfoList')
         line_ok = []
         # проверка данных
@@ -216,7 +221,13 @@ class GoodInfoList:
         :param file_path: имя файла
         :type file_path: str
         """
-        file_goods_info_list = open(file_path, "r", encoding="utf-8")
+        log_gil = logging.getLogger('reporter.good_info.GoodInfoList')
+        try:
+            file_goods_info_list = open(file_path, "r", encoding="utf-8")
+        except (OSError, FileNotFoundError):
+            print('OSError. Не верно указано имя/путь читаемого файла!')
+            log_gil.error('OSError. Не верно указано имя/путь читаемого файла!')
+            exit()
         # получаем список в котором содержится строки из файла
         strings_list = file_goods_info_list.readlines()
         file_goods_info_list.close()
@@ -232,6 +243,33 @@ class GoodInfoList:
                               number_goods,
                               production_date,
                               storage_time))
+
+    def write_file(self, file_path):
+        """
+        Метод записывает данные в файл
+        :param file_path: имя файла
+        :type file_path: str
+        """
+        log_gil = logging.getLogger('reporter.good_info.GoodInfoList')
+        try:
+            # получаем путь к каталогу записываемого файла
+            dir_name = os.path.dirname(file_path)
+            if dir_name != "":
+                # если указанной папки не существует, создаём её
+                if not os.path.isdir(dir_name):
+                    os.makedirs(dir_name)
+            file_obj = open(file_path, "w", encoding="utf-8")
+        except (OSError, FileNotFoundError):
+            print('OSError. Не верно указано имя/путь записываемого файла!')
+            log_gil.error('OSError. Не верно указано имя/путь записываемого файла!')
+            exit()
+        for element in self.goods_list:
+            line = '{p_n}:{c_p}:{n_g}:{d_d}:{s_t}\n'\
+                .format(p_n=element.product_name, c_p=element.cost_product,
+                        n_g=element.number_goods, d_d=element.production_date,
+                        s_t=element.storage_time)
+            file_obj.write(line)
+        file_obj.close()
 
     def add(self, good_info):
         """
